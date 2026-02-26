@@ -13,10 +13,35 @@ draw = function(){
   fill(255, 255, 255);
   
   if (answer == 1) {
-    text("YOUR", 176, 200);
-    text("MESSAGE", 159, 229); 
-  }
+    text("Wealth", 176, 200);
+    text("for many years", 159, 229); 
   
+   }
+  
+  
+  if (answer == 2) {
+text("I like beans", 176, 200);
+
+  }
+ 
+  if (answer == 3) {
+text("I know", 176, 200);
+text("where you live", 159, 229); 
+
+  }
+
+ if (answer == 4) {
+fill(0,255,0)
+text("Normal 8 balls", 176, 200);
+text("have 20 sides", 159, 229); 
+
+  }
+ if (answer == 5) {
+text("this one", 176, 200);
+text("has 5", 159, 229); 
+
+  }
+
 };
 
 mouseClicked = function(){
