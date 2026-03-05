@@ -3,9 +3,27 @@ setup = function() {
 };
 
 var answer = 1;
+var y = 200;
+var speed = 2;
+
+
 
 draw = function(){
-  background(100,100,100);
+   // Interactive background
+  noStroke();
+  if (mouseY < height/2 && mousePressed) {
+    fill(random(255), 50, 50);
+    rect(0, 0, width, height/2);
+  }
+
+  fill(0, 50, 50);
+  rect(0, height/2, width, height/2);
+
+  if (mouseY > height/2 && mousePressed) {
+    stroke(0);
+    fill(random(255), random(255), random(255));
+    rect(0, 0, width, height);
+  }
   fill(0, 0, 0);
   ellipse(200, 200, 375, 375);
   fill(60, 0, 255);
